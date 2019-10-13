@@ -12,10 +12,6 @@ RUN apk add --no-cache gcc g++ make libc-dev python-dev openssl && \
     apk del gcc make python-dev libc-dev g++ maven && \
     rm -rf /var/cache/apk/*
 
-# 8181 : API
-# 6633 : Openflow
-# 8101 : ODL cli
-
 EXPOSE 8181 6633 8101
 
 CMD ./distribution-karaf-0.5.0-Boron/bin/karaf
