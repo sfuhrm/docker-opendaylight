@@ -31,4 +31,4 @@ It support others southbound protocol and can be integrated in Openstack or even
 
 ### GUI / admin credential
 
-admin/admin
+`admin/admin`
