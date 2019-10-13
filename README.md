@@ -28,3 +28,7 @@ It support others southbound protocol and can be integrated in Openstack or even
 
 ### Access Web interface
 `http://localhost:8181/index.html`
+
+### GUI / admin credential
+
+admin/admin
