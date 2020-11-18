@@ -12,6 +12,11 @@ OpenDaylight supports other southbound protocols and can be integrated in Openst
 ## Supported tags
 
 - latest
+- 0.13.1
+- 0.13.0
+- 0.12.2
+- 0.12.1
+- 0.12.0
 
 ## What's inside
 
