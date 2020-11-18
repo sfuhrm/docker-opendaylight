@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget && \
 # apt-get install -y --no-install-recommends net-tools && \
   wget https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/${ODL_VERSION}/opendaylight-${ODL_VERSION}.tar.gz -O- | \
   tar -xvzf- && \
-  apt-get remove wget && \
+  apt-get remove -y wget && \
   rm -rf /var/lib/apt/lists/*
 EXPOSE 8181 6633 8101
 
