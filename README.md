@@ -64,3 +64,4 @@ Changes to Guillaume's repo:
 - The fork supports newer OpenDaylight versions (Guillaumes repo is fixed to use OpenDaylight 0.5.0 Boron).
 - Using different Docker base image for JDK 11.
 - Removing the tar-archive.
+- Starting the CMD with the `server` option to not exit on startup without a connected terminal.
