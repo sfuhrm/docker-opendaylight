@@ -9,9 +9,9 @@ COPY .version /version
 RUN apt-get update && apt-get install -y --no-install-recommends wget && \
 # apt-get install -y --no-install-recommends net-tools && \
   wget https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$(cat /version)/opendaylight-$(cat /version).tar.gz -O- | \
-  tar -xvzf- && \
+  tar -xvzf- --strip-components 1 && \
   apt-get remove -y wget && \
   rm -rf /var/lib/apt/lists/*
 EXPOSE 8181 6633 8101
 
-CMD ./opendaylight-$(cat /version)/bin/karaf server
+CMD ./bin/karaf server
