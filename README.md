@@ -17,6 +17,18 @@ OpenDaylight supports other southbound protocols and can be integrated in Openst
 - 0.12.2
 - 0.12.1
 - 0.12.0
+- 0.11.4
+- 0.11.3
+- 0.11.2
+- 0.11.1
+- 0.10.3
+- 0.10.2
+- 0.10.1
+- 0.10.0
+- 0.9.3
+- 0.9.2
+- 0.9.1
+- 0.9.0
 
 ## What's inside
 
