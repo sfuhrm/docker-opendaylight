@@ -36,8 +36,8 @@ To access the Karaf CLI, issue the command
 
 The default SSH credentials are:
 
-- Username: karaf
-- Password: karaf
+- Username: `karaf`
+- Password: `karaf`
 
 ### Access Web interface
 
@@ -51,8 +51,8 @@ The site is then available using the URL
 
 The default credentials are:
 
-- Username: admin
-- Password: admin
+- Username: `admin`
+- Password: `admin`
 
 ## Credits
 
