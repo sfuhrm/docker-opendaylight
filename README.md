@@ -1,5 +1,8 @@
 # OpenDaylight controller
-[![](https://images.microbadger.com/badges/image/sfuhrm/opendaylight.svg)](https://microbadger.com/images/sfuhrm/opendaylight "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/sfuhrm/opendaylight.svg)](https://microbadger.com/images/sfuhrm/opendaylight "Get your own version badge on microbadger.com")
+
+[![](https://img.shields.io/docker/pulls/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
+[![](https://img.shields.io/docker/image-size/sfuhrm/opendaylight/latest?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
+
 
 OpenDaylight is an OpenFlow controller, useful to control and orchestrate a
 network of switches that speak the openflow protocol on your infrastructure.
