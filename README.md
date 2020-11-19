@@ -76,6 +76,20 @@ The default credentials are:
 - Username: `admin`
 - Password: `admin`
 
+## Customization via ENV variables
+
+The following environment variables can be set to customize the started
+server:
+
+- `KARAF_USER`: The user name of the Karaf service.
+- `KARAF_PASSWORD`: The password of the Karaf service.
+
+Example:
+
+```bash
+docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8181:8181 -p 8101:8101  --name=opendaylight sfuhrm/opendaylight:latest
+```
+
 ## Credits
 
 This is a fork of [Guillaume Lefevres](https://github.com/guillaumelfv/docker-opendaylight)
