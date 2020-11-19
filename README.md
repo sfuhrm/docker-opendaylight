@@ -6,8 +6,10 @@ network of switches that speak the openflow protocol on your infrastructure.
 
 OpenDaylight supports other southbound protocols and can be integrated in Openstack or even Kubernetes.
 
-[OpenDaylight Home](https://www.opendaylight.org/)
-[OpenDaylight Aluminium Documentation](https://docs.opendaylight.org/en/stable-aluminium/)
+More reading can be found here:
+
+- [OpenDaylight Home](https://www.opendaylight.org/)
+- [OpenDaylight Aluminium Documentation](https://docs.opendaylight.org/en/stable-aluminium/)
 
 ## Supported tags
 
