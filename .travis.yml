@@ -2,4 +2,11 @@ services:
   - docker
 
 before_install:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
   - docker build -t sfuhrm/opendaylight:latest .
+
+deploy:
+  provider: script
+  script: docker push sfuhrm/opendaylight:latest
+  on:
+    branch: master
