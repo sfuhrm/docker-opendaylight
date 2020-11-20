@@ -18,6 +18,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget procps && 
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/* /var/cache/apt && \
   chmod a+x /docker-entrypoint.sh
-EXPOSE 8181 6633 8101
+EXPOSE 6633 8101
 
 CMD /docker-entrypoint.sh
