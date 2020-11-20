@@ -8,3 +8,4 @@ for i in ${BRANCHES}; do
     git merge master -m"Merge master branch with version branch $i"
     git push
 done
+git checkout master
