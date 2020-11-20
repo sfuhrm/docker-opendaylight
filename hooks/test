@@ -9,7 +9,7 @@ ODL_VERSION: ${ODL_VERSION}
 ################
 ENDOFCAT
 
-if echo "feature:list" | docker run -e KARAF_INTERACTIVE=1 -i $IMAGE_NAME . | grep -i "karaf shell"; then
+if (echo "feature:list" | docker run -e KARAF_INTERACTIVE=1 -i $IMAGE_NAME) | grep -i "karaf shell"; then
     echo "OK:    karaf shell was found in output of feature:list"
 else
     echo "FATAL: karaf shell was not found in output of feature:list"
