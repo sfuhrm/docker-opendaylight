@@ -81,4 +81,4 @@ docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:
 ## Credits
 
 This is a fork of [Guillaume Lefevres](https://github.com/guillaumelfv/docker-opendaylight)
-repository, but most things have changed.
+repository, but nothing of Guillaumes work is left.
