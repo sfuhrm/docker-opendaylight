@@ -41,14 +41,13 @@ More reading can be found here:
 - No module installed (you can connect to the CLI to set whatever module you want to use).
 - Exposed TCP ports:
   - 6633 Openflow,
-  - 8181 WebUI/REST api (see below),
   - 8101 Karaf CLI via SSH (see below).
 
 ## How to use it
 
 ### Run container
 
-`docker run -d -p 6633:6633 -p 8181:8181 -p 8101:8101 --name=opendaylight sfuhrm/opendaylight`
+`docker run -d -p 6633:6633 -p 8101:8101 --name=opendaylight sfuhrm/opendaylight`
 
 ### Access OpenDaylight karaf CLI
 
@@ -61,21 +60,6 @@ The default SSH credentials are:
 - Username: `karaf`
 - Password: `karaf`
 
-### Access Web interface
-
-The web interface requires the Karaf feature to be installed:
-
-`feature:install odl-dlux-all`
-
-The site is then available using the URL
-
-`http://localhost:8181/index.html`
-
-The default credentials are:
-
-- Username: `admin`
-- Password: `admin`
-
 ## Customization via ENV variables
 
 The following environment variables can be set to customize the started
@@ -87,7 +71,7 @@ server:
 Example:
 
 ```bash
-docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8181:8181 -p 8101:8101  --name=opendaylight sfuhrm/opendaylight:latest
+docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:8101  --name=opendaylight sfuhrm/opendaylight:latest
 ```
 
 ## Credits
