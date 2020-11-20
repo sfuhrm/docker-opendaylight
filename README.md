@@ -67,6 +67,7 @@ server:
 
 - `KARAF_USER`: The user name of the Karaf service.
 - `KARAF_PASSWORD`: The password of the Karaf service.
+- `KARAF_FEATURES`: Comma separated features to load on boot of OpenDaylight. Example: `odl-yangtools-parser,odl-yangtools-parser-api`
 
 Example:
 
