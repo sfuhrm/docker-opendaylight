@@ -67,7 +67,7 @@ server:
 
 | Variable                | Default   |  Possible Values |   |
 |-------------------------|-----------|------------------|---|
-| `KARAF_INTERACTIVE`     | `0`       | 0,1              | Set to `1` to run Karaf interactive, meaning that the docker instance will be interactive. As an alternative, you can connect in a running server instance using `docker exec -ti opendaylight /odl/bin/client`  |
+| `KARAF_INTERACTIVE`     | `0`       | `0`,`1`              | Set to `1` to run Karaf interactive, meaning that the docker instance will be interactive. As an alternative, you can connect in a running server instance using `docker exec -ti opendaylight /odl/bin/client`  |
 | `KARAF_FEATURES`        |           | string           | Comma separated features to load on boot of OpenDaylight. Example: `odl-yangtools-parser,odl-yangtools-parser-api` |
 | `KARAF_USER`            | `karaf`   | string           | The user name of the Karaf service.  |
 | `KARAF_PASSWORD`        | `karaf`   | string           | The password of the Karaf service.  |
