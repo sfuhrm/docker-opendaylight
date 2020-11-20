@@ -9,7 +9,9 @@ ARG ODL_VERSION=0.13.1
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
-RUN apt-get update && apt-get install -y --no-install-recommends wget && \
+# wget is just used for fetching the tar.gz on build time
+# procps is used by the karaf shell script
+RUN apt-get update && apt-get install -y --no-install-recommends wget procps && \
   wget https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz -O- | \
   tar -xvzf- --strip-components 1 && \
   apt-get remove -y wget && \
