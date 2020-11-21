@@ -13,7 +13,7 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 # procps is used by the karaf shell script
 RUN apt-get update && apt-get install -y --no-install-recommends wget procps && \
   wget https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz -O- | \
-  tar -xvzf- --strip-components 1 && \
+  tar -xzf- --strip-components 1 && \
   apt-get remove -y wget && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/* /var/cache/apt && \
