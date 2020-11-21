@@ -49,16 +49,18 @@ More reading can be found here:
 
 `docker run -d -p 6633:6633 -p 8101:8101 --name=opendaylight sfuhrm/opendaylight`
 
-### Access OpenDaylight karaf CLI
+### Access OpenDaylight Karaf CLI
 
 To access the Karaf CLI, issue the command
 
-`ssh -p 8101 karaf@localhost`
+`ssh -o StrictHostKeyChecking=no -p 8101 karaf@localhost`
 
 The default SSH credentials are:
 
 - Username: `karaf`
 - Password: `karaf`
+
+Note: `StrictHostKeyChecking` is turned off because different container invocations will have different host keys.
 
 ## Customization via ENV variables
 
