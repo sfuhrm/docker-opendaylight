@@ -38,7 +38,7 @@ More reading can be found here:
 ## What's inside
 
 - Based on [openjdk:11.0.9.1-slim-buster](https://hub.docker.com/_/openjdk).
-- No module installed (you can connect to the CLI to set whatever module you want to use).
+- No modules installed (you can install modules at boot time by setting the `KARAF_FEATURES` env variable, see below).
 - Exposed TCP ports:
   - 6633 Openflow,
   - 8101 Karaf CLI via SSH (see below).
