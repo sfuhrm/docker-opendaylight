@@ -30,10 +30,10 @@ More reading can be found here:
 - 0.10.2
 - 0.10.1
 - 0.10.0
-- 0.9.3
-- 0.9.2
-- 0.9.1
-- 0.9.0
+- 0.9.3 (upcoming)
+- 0.9.2 (upcoming)
+- 0.9.1 (upcoming)
+- 0.9.0 (upcoming)
 
 ## What's inside
 
