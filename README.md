@@ -38,7 +38,7 @@ More reading can be found here:
 
 ## What's inside
 
-- Based on [openjdk:11.0.9.1-slim-buster](https://hub.docker.com/_/openjdk).
+- Based on [openjdk:11-slim-buster](https://hub.docker.com/_/openjdk).
 - No modules installed (you can install modules at boot time by setting the `KARAF_FEATURES` env variable, see below).
 - Exposed TCP ports:
   - 6633 Openflow,
