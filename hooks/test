@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source script/env
+source scripts/env
 
 TMP=/tmp/$$.tmp
 
