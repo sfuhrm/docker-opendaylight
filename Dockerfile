@@ -1,4 +1,5 @@
-FROM openjdk:11.0.9.1-slim-buster
+ARG PARENT_IMAGE=openjdk:11.0.9.1-slim-buster
+FROM $PARENT_IMAGE
 
 LABEL maintainer="stephan.fuhrmann@ionos.com"
 

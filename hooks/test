@@ -1,13 +1,6 @@
 #! /bin/bash
-export ODL_VERSION=$(cat build-args/ODL_VERSION)
 
-cat <<ENDOFCAT
-################
-Test setup:
-
-ODL_VERSION: ${ODL_VERSION}
-################
-ENDOFCAT
+source script/env
 
 TMP=/tmp/$$.tmp
 

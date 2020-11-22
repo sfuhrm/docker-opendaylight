@@ -1,0 +1,14 @@
+#! /bin/bash
+
+export ODL_VERSION=$(cat build-args/ODL_VERSION)
+export PARENT_IMAGE=$(cat build-args/PARENT_IMAGE)
+
+cat <<ENDOFCAT
+################
+Env setup:
+
+ODL_VERSION:  ${ODL_VERSION}
+PARENT_IMAGE: ${PARENT_IMAGE}
+
+################
+ENDOFCAT

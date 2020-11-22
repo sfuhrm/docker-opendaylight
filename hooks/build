@@ -1,12 +1,5 @@
 #! /bin/bash
-export ODL_VERSION=$(cat build-args/ODL_VERSION)
 
-cat <<ENDOFCAT
-################
-Build setup:
+source script/env
 
-ODL_VERSION: ${ODL_VERSION}
-################
-ENDOFCAT
-
-docker build --build-arg ODL_VERSION -f $DOCKERFILE_PATH -t $IMAGE_NAME .
+docker build --build-arg ODL_VERSION --build-arg PARENT_IMAGE -f $DOCKERFILE_PATH -t $IMAGE_NAME .
