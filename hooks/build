@@ -1,5 +1,6 @@
 #! /bin/bash
 
+pwd
 source script/env
 
 docker build --build-arg ODL_VERSION --build-arg PARENT_IMAGE -f $DOCKERFILE_PATH -t $IMAGE_NAME .
