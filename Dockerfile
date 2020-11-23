@@ -24,4 +24,4 @@ EXPOSE 6633 8101
 
 USER odl
 
-CMD exec /docker-entrypoint.sh
+CMD ["/docker-entrypoint.sh"]
