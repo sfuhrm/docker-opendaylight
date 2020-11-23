@@ -21,4 +21,4 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget procps && 
   chmod a+x /docker-entrypoint.sh
 EXPOSE 6633 8101
 
-CMD exec /docker-entrypoint.sh
+ENTRYPOINT exec /docker-entrypoint.sh
