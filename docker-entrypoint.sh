@@ -17,4 +17,4 @@ fi
 # replace karaf user and password
 sed -i -e"s/karaf = [^,]*\(.*\)/${KARAF_USER} = ${KARAF_PASSWORD}\1/" /odl/etc/users.properties
 
-cd /odl && bin/karaf ${KARAF_ARGS}
+bin/karaf ${KARAF_ARGS}
