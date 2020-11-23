@@ -55,14 +55,14 @@ More reading can be found here:
 
 To access the Karaf CLI, issue the command
 
-`ssh -o StrictHostKeyChecking=no -p 8101 karaf@localhost`
+`ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 8101 karaf@localhost`
 
 The default SSH credentials are:
 
 - Username: `karaf`
 - Password: `karaf`
 
-Note: `StrictHostKeyChecking` is turned off because different container invocations will have different host keys.
+Note: `StrictHostKeyChecking` and `UserKnownHostsFile` file is turned off because different container invocations will have different host keys.
 
 ## Customization via ENV variables
 
