@@ -74,6 +74,8 @@ An interactive Karaf shell can also be spawned with the following command line:
 docker exec -ti opendaylight bin/client
 ```
 
+where `opendaylight` is the name of the running container.
+
 ## Customization via ENV variables
 
 The following environment variables can be set to customize the started
