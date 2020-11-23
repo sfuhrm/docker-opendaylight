@@ -53,6 +53,8 @@ More reading can be found here:
 
 ### Access OpenDaylight Karaf CLI
 
+#### Using SSH
+
 To access the Karaf CLI, issue the command
 
 `ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p 8101 karaf@localhost`
@@ -63,6 +65,14 @@ The default SSH credentials are:
 - Password: `karaf`
 
 Note: `StrictHostKeyChecking` and `UserKnownHostsFile` file is turned off because different container invocations will have different host keys.
+
+#### Using Docker
+
+An interactive Karaf shell can also be spawned with the following command line:
+
+```bash
+docker exec -ti opendaylight bin/client
+```
 
 ## Customization via ENV variables
 
