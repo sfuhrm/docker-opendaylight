@@ -43,13 +43,14 @@ More reading can be found here:
 - No modules installed (you can install modules at boot time by setting the `KARAF_FEATURES` env variable, see below).
 - Exposed TCP ports:
   - 6633 Openflow,
-  - 8101 Karaf CLI via SSH (see below).
+  - 8101 Karaf CLI via SSH (see below),
+  - 8181 RESTCONF
 
 ## How to use it
 
 ### Run container
 
-`docker run -d -p 6633:6633 -p 8101:8101 --name=opendaylight sfuhrm/opendaylight`
+`docker run -d -p 6633:6633 -p 8101:8101 -p 8181:8181 --name=opendaylight sfuhrm/opendaylight`
 
 ### Access OpenDaylight Karaf CLI
 
@@ -91,7 +92,7 @@ server:
 Example:
 
 ```bash
-docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:8101  --name=opendaylight sfuhrm/opendaylight:latest
+docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:8101 -p 8181:8181 --name=opendaylight sfuhrm/opendaylight:latest
 ```
 
 ## Credits

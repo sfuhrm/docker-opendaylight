@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget procps && 
   rm -rf /var/lib/apt/lists/* /var/cache/apt && \
   useradd --home-dir /odl odl && \
   chown -R odl:odl /odl
-EXPOSE 6633 8101
+EXPOSE 6633 8101 8181
 
 USER odl
 
