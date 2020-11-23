@@ -18,7 +18,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget procps && 
   apt-get remove -y wget && \
   apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/* /var/cache/apt && \
-  useradd --home-dir /odl odl
+  useradd --home-dir /odl odl && \
+  chown -R odl:odl /odl
 EXPOSE 6633 8101
 
 USER odl
