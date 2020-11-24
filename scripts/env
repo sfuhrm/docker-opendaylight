@@ -1,6 +1,6 @@
 #! /bin/bash
 
-if [ -n "${ODL_VERSION}" ]; then
+if [ ! -n "${ODL_VERSION}" ]; then
     if [ -n "${DOCKER_TAG}" ]; then
         export ODL_VERSION=${DOCKER_TAG}
     else
@@ -8,7 +8,7 @@ if [ -n "${ODL_VERSION}" ]; then
     fi
 fi
 
-if [ -n "${PARENT_IMAGE}" ]; then
+if [ ! -n "${PARENT_IMAGE}" ]; then
     if [[ ${ODL_VERSION} =~ 0\.[1-9]\.[0-9]* ]]; then
         export PARENT_IMAGE=openjdk:8-jre-slim-buster
     else
@@ -16,7 +16,7 @@ if [ -n "${PARENT_IMAGE}" ]; then
     fi
 fi
 
-if [ -n "${DISTRIBUTION_URL}" ]; then
+if [ ! -n "${DISTRIBUTION_URL}" ]; then
     export DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
 fi
 
