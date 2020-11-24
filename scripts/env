@@ -1,7 +1,20 @@
 #! /bin/bash
 
-export ODL_VERSION=$(cat build-args/ODL_VERSION)
-export PARENT_IMAGE=$(cat build-args/PARENT_IMAGE)
+if [ -n "${ODL_VERSION}" ]; then
+    if [ -n "${DOCKER_TAG}" ]; then
+        export ODL_VERSION=${DOCKER_TAG}
+    else
+        export ODL_VERSION=0.13.1
+    fi
+fi
+
+if [ -n "${PARENT_IMAGE}" ]; then
+    if [[ ${ODL_VERSION} =~ 0\.[1-9]\.[0-9]* ]]; then
+        export PARENT_IMAGE=openjdk:8-jre-slim-buster
+    else
+        export PARENT_IMAGE=openjdk:11-jre-slim-buster
+    fi
+fi
 
 cat <<ENDOFCAT
 ################
