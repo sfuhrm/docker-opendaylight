@@ -2,4 +2,8 @@
 
 source scripts/env
 
-docker build --build-arg ODL_VERSION --build-arg PARENT_IMAGE -f $DOCKERFILE_PATH -t $IMAGE_NAME .
+docker build \
+--build-arg ODL_VERSION \
+--build-arg PARENT_IMAGE \
+--build-arg DISTRIBUTION_URL \
+-f $DOCKERFILE_PATH -t $IMAGE_NAME .
