@@ -16,12 +16,17 @@ if [ -n "${PARENT_IMAGE}" ]; then
     fi
 fi
 
+if [ -n "${DISTRIBUTION_URL}" ]; then
+    export DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
+fi
+
 cat <<ENDOFCAT
 ################
 Build args:
 
-ODL_VERSION:  ${ODL_VERSION}
-PARENT_IMAGE: ${PARENT_IMAGE}
+ODL_VERSION:      ${ODL_VERSION}
+PARENT_IMAGE:     ${PARENT_IMAGE}
+DISTRIBUTION_URL: ${DISTRIBUTION_URL}
 
 Dockerhub env:
 
