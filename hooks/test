@@ -6,16 +6,18 @@ TMP=/tmp/$$.tmp
 
 echo "TEST 1: Issue karaf shell 'feature:list'"
 echo "feature:list" | docker run -e KARAF_INTERACTIVE=1 -i $IMAGE_NAME > ${TMP}
-if ! grep -i "karaf shell" ${TMP}; then
+if ! grep >/dev/null -i "karaf shell" ${TMP}; then
     echo "Second attempt"
     echo "feature:list" | docker run -e KARAF_INTERACTIVE=1 -i $IMAGE_NAME > ${TMP}
 fi
-if ! grep -i "karaf shell" ${TMP}; then
+if ! grep >/dev/null -i "karaf shell" ${TMP}; then
     echo "Third attempt"
     echo "feature:list" | docker run -e KARAF_INTERACTIVE=1 -i $IMAGE_NAME > ${TMP}
 fi
-if grep -i "karaf shell" ${TMP}; then
+if grep >/dev/null -i "karaf shell" ${TMP}; then
     echo "OK:    karaf shell was found in output of feature:list"
+    echo "Actual output:"
+    cat ${TMP}
 else
     echo "FATAL: karaf shell was not found in output of feature:list"
     echo "Actual output:"
