@@ -1,7 +1,7 @@
 #! /bin/bash
 
 if [ ! -n "${ODL_VERSION}" ]; then
-    if [ -n "${DOCKER_TAG}" ]; then
+    if [ -n "${DOCKER_TAG}" -a "${DOCKER_TAG}" != "latest" ]; then
         export ODL_VERSION=${DOCKER_TAG}
     else
         export ODL_VERSION=0.13.1
