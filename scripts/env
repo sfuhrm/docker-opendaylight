@@ -17,7 +17,11 @@ if [ ! -n "${PARENT_IMAGE}" ]; then
 fi
 
 if [ ! -n "${DISTRIBUTION_URL}" ]; then
-    export DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
+    if [[ ${ODL_VERSION} =~ 0\.[78]\.[0-9]* ]]; then
+        export DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/$ODL_VERSION/karaf-$ODL_VERSION.tar.gz
+    else
+        export DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
+    fi
 fi
 
 cat <<ENDOFCAT
