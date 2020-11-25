@@ -24,5 +24,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget procps && 
 EXPOSE 6633 8101 8181
 
 USER odl
+ENV ODL_VERSION=$ODL_VERSION
 
 CMD ["/docker-entrypoint.sh"]
