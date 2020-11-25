@@ -2,6 +2,7 @@
 
 [![](https://img.shields.io/docker/pulls/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
 [![](https://img.shields.io/docker/image-size/sfuhrm/opendaylight/latest?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
+[![](https://img.shields.io/docker/cloud/automated/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 
