@@ -1,13 +1,17 @@
 ARG PARENT_IMAGE=openjdk:11.0.9.1-slim-buster
 FROM $PARENT_IMAGE
 
-LABEL maintainer="stephan.fuhrmann@ionos.com"
+ARG ODL_VERSION=0.13.1
+ARG DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
+
+LABEL name="OpenDaylight" \
+      summary="OpenDaylight SDN controller" \
+      version="$ODL_VERSION" \
+      vcs-url="https://github.com/sfuhrm/docker-opendaylight.git" \
+      maintainer="stephan.fuhrmann@ionos.com"
 
 RUN mkdir /odl
 WORKDIR /odl
-
-ARG ODL_VERSION=0.13.1
-ARG DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
