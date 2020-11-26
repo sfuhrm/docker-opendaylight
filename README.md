@@ -46,7 +46,7 @@ More reading can be found here:
 
 ## What's inside
 
-- Based on [openjdk:11-slim-buster](https://hub.docker.com/_/openjdk).
+- Based on [`openjdk:11-jre-slim-buster`](https://hub.docker.com/_/openjdk) for OpenDaylight 10+ and `openjdk:8-jre-slim-buster` for older versions.
 - No modules installed (you can install modules at boot time by setting the `KARAF_FEATURES` env variable, see below).
 - Exposed TCP ports:
   - 6633 Openflow,
