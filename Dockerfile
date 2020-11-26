@@ -4,10 +4,14 @@ FROM $PARENT_IMAGE
 ARG ODL_VERSION=0.13.1
 ARG DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
 
-LABEL name="OpenDaylight" \
-      summary="OpenDaylight SDN controller" \
-      version="$ODL_VERSION" \
-      vcs-url="https://github.com/sfuhrm/docker-opendaylight.git" \
+LABEL org.label-schema.name="OpenDaylight" \
+      org.label-schema.description="OpenDaylight SDN controller" \
+      org.label-schema.usage="https://github.com/sfuhrm/docker-opendaylight/blob/master/README.md" \
+      org.label-schema.url="https://www.opendaylight.org/" \
+      org.label-schema.vendor="1&1 IONOS SE" \
+      org.label-schema.version="$ODL_VERSION" \
+      org.label-schema.schema-version="1.0" \
+      org.label-schema.vcs-url="https://github.com/sfuhrm/docker-opendaylight.git" \
       maintainer="stephan.fuhrmann@ionos.com"
 
 RUN mkdir /odl
