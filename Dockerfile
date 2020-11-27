@@ -12,6 +12,14 @@ LABEL org.label-schema.name="OpenDaylight" \
       org.label-schema.version="$ODL_VERSION" \
       org.label-schema.schema-version="1.0" \
       org.label-schema.vcs-url="https://github.com/sfuhrm/docker-opendaylight.git" \
+      org.opencontainers.authors="stephan.fuhrmann@ionos.com" \
+      org.opencontainers.image.url="https://www.opendaylight.org/" \
+      org.opencontainers.image.documentation="https://www.opendaylight.org/" \
+      org.opencontainers.image.source="https://github.com/sfuhrm/docker-opendaylight" \
+      org.opencontainers.image.version="$ODL_VERSION" \
+      org.opencontainers.image.vendor="1&1 IONOS SE" \
+      org.opencontainers.image.title="OpenDaylight" \
+      org.opencontainers.image.description="OpenDaylight SDN controller" \
       maintainer="stephan.fuhrmann@ionos.com"
 
 RUN mkdir /odl
