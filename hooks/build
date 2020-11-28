@@ -6,6 +6,6 @@ docker build \
 --build-arg ODL_VERSION \
 --build-arg PARENT_IMAGE \
 --build-arg DISTRIBUTION_URL \
---build-arg BUILD_DATE=$(date --rfc-3339=seconds) \
+--build-arg BUILD_DATE \
 --build-arg SOURCE_COMMIT \
 -f $DOCKERFILE_PATH -t $IMAGE_NAME .

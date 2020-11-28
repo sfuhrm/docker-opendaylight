@@ -1,5 +1,10 @@
 #! /bin/bash
 
+export BUILD_DATE=$(date --rfc-3339=seconds)
+if [ ! -n "${SOURCE_COMMIT}" ]; then
+    exort SOURCE_COMMIT=$(git log -n 1 --format=%H)
+fi
+
 if [ ! -n "${ODL_VERSION}" ]; then
     if [ -n "${DOCKER_TAG}" -a "${DOCKER_TAG}" != "latest" ]; then
         export ODL_VERSION=${DOCKER_TAG}
@@ -31,6 +36,7 @@ Build args:
 ODL_VERSION:      ${ODL_VERSION}
 PARENT_IMAGE:     ${PARENT_IMAGE}
 DISTRIBUTION_URL: ${DISTRIBUTION_URL}
+BUILD_DATE:       ${BUILD_DATE}
 
 Dockerhub env:
 
