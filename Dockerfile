@@ -3,15 +3,20 @@ FROM $PARENT_IMAGE
 
 ARG ODL_VERSION=0.13.1
 ARG DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
+ARG BUILD_DATE=undefined
+ARG SOURCE_COMMIT=undefined
 
 LABEL org.label-schema.name="OpenDaylight" \
       org.label-schema.description="OpenDaylight SDN controller" \
+      org.label-schema.date="$BUILD_DATE" \
       org.label-schema.usage="https://github.com/sfuhrm/docker-opendaylight/blob/master/README.md" \
       org.label-schema.url="https://www.opendaylight.org/" \
       org.label-schema.vendor="1&1 IONOS SE" \
       org.label-schema.version="$ODL_VERSION" \
       org.label-schema.schema-version="1.0" \
       org.label-schema.vcs-url="https://github.com/sfuhrm/docker-opendaylight.git" \
+      org.label-schema.vcs-ref="$SOURCE_COMMIT" \
+      org.opencontainers.image.created="$BUILD_DATE" \
       org.opencontainers.authors="stephan.fuhrmann@ionos.com" \
       org.opencontainers.image.url="https://www.opendaylight.org/" \
       org.opencontainers.image.documentation="https://www.opendaylight.org/" \
