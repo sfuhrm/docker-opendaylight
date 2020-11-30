@@ -96,6 +96,7 @@ server:
 | `KARAF_FEATURES`        |           | string           | Comma separated features to load on boot of OpenDaylight. Example: `odl-yangtools-parser,odl-yangtools-parser-api` |
 | `KARAF_USER`            | `karaf`   | string           | The user name of the Karaf service.  |
 | `KARAF_PASSWORD`        | `karaf`   | string           | The password of the Karaf service.  |
+| `ODL_LOGLEVEL`          | `INFO`    | `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`, `FATAL` |  The log level to log runtime information to the Docker console with.  |
 
 Example:
 
