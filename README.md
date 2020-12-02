@@ -95,6 +95,7 @@ server:
 | `KARAF_USER`            | `karaf`   | string           | The user name of the Karaf service.  |
 | `KARAF_PASSWORD`        | `karaf`   | string           | The password of the Karaf service.  |
 | `ODL_LOGLEVEL`          | `INFO`    | `TRACE`, `DEBUG`, `INFO`, `WARN`, `ERROR`, `FATAL` |  The log level to log runtime information to the Docker console with.  |
+| `ODL_ADMIN_PASSWORD`    | `admin`   | string           |  The password of the AAA admin user.  |
 
 Example:
 
