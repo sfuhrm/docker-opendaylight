@@ -25,7 +25,7 @@ log4j2.appender.console.layout.pattern = \${log4j2.pattern}
 LOGGINGCONFIG
 fi
 if [ -n "${ODL_ADMIN_PASSWORD}" ]; then
-    java -jar bin/aaa-cli-jar.jar --newUser admin --passwd "${ODL_ADMIN_PASSWORD}"
+    java -jar bin/aaa-cli-jar.jar --dbd /odl/data --newUser admin --passwd "${ODL_ADMIN_PASSWORD}"
 fi
 
 # replace karaf user and password
