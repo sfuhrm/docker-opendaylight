@@ -1,4 +1,4 @@
-ARG PARENT_IMAGE=openjdk:11.0.9.1-slim-buster
+ARG PARENT_IMAGE=openjdk:11-jre-slim-buster
 FROM $PARENT_IMAGE
 
 ARG ODL_VERSION=0.13.1
