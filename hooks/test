@@ -25,3 +25,27 @@ if [ "$SUCCESS" -eq 0 ]; then
     cat ${TMP}
     exit 100
 fi
+
+########################################
+
+echo "TEST 2: Use custom AAA admin password"
+
+SUCCESS=0
+for i in $(seq 1 10); do
+    echo "Attempt $i"
+    echo "feature:list" | docker run -e KARAF_INTERACTIVE=1 -e ODL_ADMIN_PASSWORD="s3cr3t" -i $IMAGE_NAME > ${TMP}
+    if grep >/dev/null -i "karaf shell" ${TMP}; then
+        echo "OK:    karaf shell was found in output of feature:list"
+        echo "Actual output:"
+        cat ${TMP}
+        SUCCESS=1
+        break
+    fi
+done
+
+if [ "$SUCCESS" -eq 0 ]; then
+    echo "FATAL: karaf shell was not found in output of feature:list"
+    echo "Actual output:"
+    cat ${TMP}
+    exit 100
+fi
