@@ -34,8 +34,8 @@ SUCCESS=0
 for i in $(seq 1 10); do
     echo "Attempt $i"
     echo "feature:list" | docker run -e KARAF_INTERACTIVE=1 -e ODL_ADMIN_PASSWORD="s3cr3t" -i $IMAGE_NAME > ${TMP}
-    if grep >/dev/null -i "karaf shell" ${TMP}; then
-        echo "OK:    karaf shell was found in output of feature:list"
+    if grep >/dev/null -i "Table USERS does not exist" ${TMP}; then
+        echo "OK:    'Table USERS does not exist' was found in output"
         echo "Actual output:"
         cat ${TMP}
         SUCCESS=1
@@ -44,7 +44,7 @@ for i in $(seq 1 10); do
 done
 
 if [ "$SUCCESS" -eq 0 ]; then
-    echo "FATAL: karaf shell was not found in output of feature:list"
+    echo "FATAL: 'Table USERS does not exist' was not found in output"
     echo "Actual output:"
     cat ${TMP}
     exit 100
