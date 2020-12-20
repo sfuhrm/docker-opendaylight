@@ -16,7 +16,7 @@ OpenDaylight supports many southbound protocols and can be integrated in Opensta
 The sites relevant for this docker image:
 
 - [Github docker-opendaylight](https://github.com/sfuhrm/docker-opendaylight): The Github repository.
-- [The Docker Hub repository with version specific images](https://hub.docker.com/repository/docker/sfuhrm/opendaylight)
+- [The Docker Hub repository with version specific images](https://hub.docker.com/r/sfuhrm/opendaylight)
 
 More reading can be found here:
 
