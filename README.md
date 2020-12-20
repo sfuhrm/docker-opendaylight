@@ -11,49 +11,11 @@ OpenDaylight is a SDN controller. It can be used to control and orchestrate a ne
 
 OpenDaylight supports many southbound protocols and can be integrated in Openstack or even Kubernetes.
 
-## Relevant links
-
-The sites relevant for this docker image:
-
-- [Github docker-opendaylight](https://github.com/sfuhrm/docker-opendaylight): The Github repository.
-- [The Docker Hub repository with version specific images](https://hub.docker.com/r/sfuhrm/opendaylight)
-
-More reading can be found here:
-
-- [OpenDaylight Home](https://www.opendaylight.org/)
-- [OpenDaylight Aluminium Documentation](https://docs.opendaylight.org/en/stable-aluminium/)
-
-## Supported tags
-
-- latest
-- 0.13.1
-- 0.13.0
-- 0.12.2
-- 0.12.1
-- 0.12.0
-- 0.11.4
-- 0.11.3
-- 0.11.2
-- 0.11.1
-- 0.11.0
-- 0.10.3
-- 0.10.2
-- 0.10.1
-- 0.10.0
-- 0.9.3
-- 0.9.2
-- 0.9.1
-- 0.9.0
-- 0.8.4
-- 0.8.3
-- 0.8.2
-- 0.8.1
-- 0.8.0
-
 ## What's inside
 
-- Based on [`openjdk:11-jre-slim-buster`](https://hub.docker.com/_/openjdk) for OpenDaylight 10+ and `openjdk:8-jre-slim-buster` for older versions.
-- No modules installed (you can install modules at boot time by setting the [`KARAF_FEATURES`](#customization-via-env-variables) env variable).
+- A ready-to-use OpenDaylight instance that will start up as a server. Multiple OpenDaylight versions are provided as tags.
+- The images are based on [`openjdk:11-jre-slim-buster`](https://hub.docker.com/_/openjdk) for OpenDaylight 10+ and `openjdk:8-jre-slim-buster` for older versions.
+- No features are installed (you can install modules at boot time by setting the [`KARAF_FEATURES`](#customization-via-env-variables) env variable).
 - Exposed TCP ports:
   - 6633 Openflow,
   - 8101 Karaf CLI via SSH (see below),
@@ -61,7 +23,10 @@ More reading can be found here:
 
 ## How to use it
 
-### Run container
+A typical use-case will be starting docker with several environment variables to prepare the container in a way that you have a readily
+configured OpenDaylight instance with the features you need.
+
+### Run the container
 
 `docker run -d -p 6633:6633 -p 8101:8101 -p 8181:8181 --name=opendaylight sfuhrm/opendaylight`
 
@@ -109,6 +74,45 @@ Example:
 ```bash
 docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:8101 -p 8181:8181 --name=opendaylight sfuhrm/opendaylight:latest
 ```
+
+## Supported tags
+
+- latest
+- 0.13.1
+- 0.13.0
+- 0.12.2
+- 0.12.1
+- 0.12.0
+- 0.11.4
+- 0.11.3
+- 0.11.2
+- 0.11.1
+- 0.11.0
+- 0.10.3
+- 0.10.2
+- 0.10.1
+- 0.10.0
+- 0.9.3
+- 0.9.2
+- 0.9.1
+- 0.9.0
+- 0.8.4
+- 0.8.3
+- 0.8.2
+- 0.8.1
+- 0.8.0
+
+## Relevant links
+
+The sites relevant for this docker image:
+
+- [Github docker-opendaylight](https://github.com/sfuhrm/docker-opendaylight): The Github repository.
+- [The Docker Hub repository with version specific images](https://hub.docker.com/r/sfuhrm/opendaylight)
+
+More reading can be found here:
+
+- [OpenDaylight Home](https://www.opendaylight.org/)
+- [OpenDaylight Aluminium Documentation](https://docs.opendaylight.org/en/stable-aluminium/)
 
 ## Credits
 
