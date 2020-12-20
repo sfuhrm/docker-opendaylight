@@ -1,10 +1,10 @@
 # OpenDaylight controller Docker image
 
-[![](https://img.shields.io/docker/pulls/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
-[![](https://img.shields.io/docker/image-size/sfuhrm/opendaylight/latest?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
-[![](https://img.shields.io/microbadger/layers/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
-[![](https://img.shields.io/docker/cloud/automated/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
-[![](https://img.shields.io/docker/cloud/build/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/repository/docker/sfuhrm/opendaylight/general)
+[![](https://img.shields.io/docker/pulls/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
+[![](https://img.shields.io/docker/image-size/sfuhrm/opendaylight/latest?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
+[![](https://img.shields.io/microbadger/layers/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
+[![](https://img.shields.io/docker/cloud/automated/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
+[![](https://img.shields.io/docker/cloud/build/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 OpenDaylight is a SDN controller. It can be used to control and orchestrate a network of switches.
