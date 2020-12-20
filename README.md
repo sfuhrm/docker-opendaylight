@@ -11,6 +11,13 @@ OpenDaylight is a SDN controller. It can be used to control and orchestrate a ne
 
 OpenDaylight supports many southbound protocols and can be integrated in Openstack or even Kubernetes.
 
+## Relevant links
+
+The sites relevant for this docker image:
+
+- [Github docker-opendaylight](https://github.com/sfuhrm/docker-opendaylight): The Github repository.
+- [The Docker Hub repository with version specific images](https://hub.docker.com/repository/docker/sfuhrm/opendaylight)
+
 More reading can be found here:
 
 - [OpenDaylight Home](https://www.opendaylight.org/)
