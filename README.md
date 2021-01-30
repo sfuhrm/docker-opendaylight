@@ -19,7 +19,7 @@ OpenDaylight supports many southbound protocols and can be integrated in Opensta
 - Exposed TCP ports:
   - 6633 Openflow,
   - 8101 Karaf CLI via SSH (see below),
-  - 8181 RESTCONF
+  - 8181 RESTCONF / HTTP
 
 ## How to use it
 
