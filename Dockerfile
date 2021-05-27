@@ -1,7 +1,7 @@
 ARG PARENT_IMAGE=openjdk:11-jre-slim-buster
 FROM $PARENT_IMAGE
 
-ARG ODL_VERSION=0.13.1
+ARG ODL_VERSION=14.0.0
 ARG DISTRIBUTION_URL=https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/$ODL_VERSION/opendaylight-$ODL_VERSION.tar.gz
 ARG BUILD_DATE=undefined
 ARG SOURCE_COMMIT=undefined
