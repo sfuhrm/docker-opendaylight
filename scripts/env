@@ -2,7 +2,7 @@
 
 export BUILD_DATE=$(date --rfc-3339=seconds)
 if [ ! -n "${SOURCE_COMMIT}" ]; then
-    exort SOURCE_COMMIT=$(git log -n 1 --format=%H)
+    export SOURCE_COMMIT=$(git log -n 1 --format=%H)
 fi
 
 if [ ! -n "${ODL_VERSION}" ]; then
