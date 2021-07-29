@@ -128,6 +128,31 @@ jobs:
           ODL_VERSION: 0.9.0
           PARENT_IMAGE: "openjdk:8-jre-slim-buster"
           DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.9.0/opendaylight-0.9.0.tar.gz"
+        -
+          TAG: 0.8.4
+          ODL_VERSION: 0.8.4
+          PARENT_IMAGE: "openjdk:8-jre-slim-buster"
+          DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.8.4/karaf-0.8.4.tar.gz"
+        -
+          TAG: 0.8.3
+          ODL_VERSION: 0.8.3
+          PARENT_IMAGE: "openjdk:8-jre-slim-buster"
+          DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.8.3/karaf-0.8.3.tar.gz"
+        -
+          TAG: 0.8.2
+          ODL_VERSION: 0.8.2
+          PARENT_IMAGE: "openjdk:8-jre-slim-buster"
+          DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.8.2/karaf-0.8.2.tar.gz"
+        -
+          TAG: 0.8.1
+          ODL_VERSION: 0.8.1
+          PARENT_IMAGE: "openjdk:8-jre-slim-buster"
+          DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.8.1/karaf-0.8.1.tar.gz"
+        -
+          TAG: 0.8.0
+          ODL_VERSION: 0.8.0
+          PARENT_IMAGE: "openjdk:8-jre-slim-buster"
+          DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/karaf/0.8.0/karaf-0.8.0.tar.gz"
 
     steps:
       -
