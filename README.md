@@ -1,10 +1,10 @@
 # OpenDaylight controller Docker image
 
-[![](https://img.shields.io/docker/pulls/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
-[![](https://img.shields.io/docker/image-size/sfuhrm/opendaylight/latest?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
-[![](https://img.shields.io/microbadger/layers/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
-[![](https://img.shields.io/docker/cloud/automated/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
-[![](https://img.shields.io/docker/cloud/build/sfuhrm/opendaylight?style=plastic)](https://hub.docker.com/r/sfuhrm/opendaylight)
+[![](https://img.shields.io/docker/pulls/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
+[![](https://img.shields.io/docker/image-size/stephanfuhrmannionos/opendaylight/latest?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
+[![](https://img.shields.io/microbadger/layers/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
+[![](https://img.shields.io/docker/cloud/automated/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
+[![](https://img.shields.io/docker/cloud/build/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 OpenDaylight is a SDN controller. It can be used to control and orchestrate a network of switches.
@@ -28,7 +28,7 @@ configured OpenDaylight instance with the features you need.
 
 ### Run the container
 
-`docker run -d -p 6633:6633 -p 8101:8101 -p 8181:8181 --name=opendaylight sfuhrm/opendaylight`
+`docker run -d -p 6633:6633 -p 8101:8101 -p 8181:8181 --name=opendaylight stephanfuhrmannionos/opendaylight`
 
 ### Access OpenDaylight Karaf CLI
 
@@ -72,7 +72,7 @@ server:
 Example:
 
 ```bash
-docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:8101 -p 8181:8181 --name=opendaylight sfuhrm/opendaylight:latest
+docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:8101 -p 8181:8181 --name=opendaylight stephanfuhrmannionos/opendaylight:latest
 ```
 
 ## Supported tags
