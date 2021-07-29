@@ -14,9 +14,15 @@ jobs:
         include:
         -
           TAG: latest
-          ODL_VERSION: 0.13.3
+          ODL_VERSION: 14.0.0
           PARENT_IMAGE: "openjdk:11-jre-slim-buster"
-          DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.13.3/opendaylight-0.13.3.tar.gz"
+          DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/14.0.0/opendaylight-14.0.0.tar.gz"
+
+        -
+          TAG: 14.0.0
+          ODL_VERSION: 14.0.0
+          PARENT_IMAGE: "openjdk:11-jre-slim-buster"
+          DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/14.0.0/opendaylight-14.0.0.tar.gz"
         -
           TAG: 0.13.3
           ODL_VERSION: 0.13.3
