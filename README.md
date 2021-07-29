@@ -1,5 +1,6 @@
 # OpenDaylight controller Docker image
 
+[![Docker Image CI](https://github.com/sfuhrm/docker-opendaylight/actions/workflows/docker-image.yml/badge.svg)](https://github.com/sfuhrm/docker-opendaylight/actions/workflows/docker-image.yml)
 [![](https://img.shields.io/docker/pulls/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
 [![](https://img.shields.io/docker/image-size/stephanfuhrmannionos/opendaylight/latest?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
 [![](https://img.shields.io/microbadger/layers/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
