@@ -6,10 +6,6 @@ on:
   pull_request:
     branches: [ master ]
 
-env:
-  JDK8: "openjdk:8-jre-slim-buster"
-  JDK11: "openjdk:11-jre-slim-buster
-
 jobs:
   docker:
     runs-on: ubuntu-latest
@@ -19,7 +15,7 @@ jobs:
         -
           TAG: latest
           ODL_VERSION: 0.13.3
-          PARENT_IMAGE: ${{ env.JDK11 }}
+          PARENT_IMAGE: "openjdk:11-jre-slim-buster"
           DISTRIBUTION_URL: "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.13.3/opendaylight-0.13.3.tar.gz"
         -
           TAG: 0.13.3
