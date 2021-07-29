@@ -62,9 +62,9 @@ jobs:
           push: true
           tags: stephanfuhrmannionos/opendaylight:${{ matrix.TAG }}
           build-args: |
-            ODL_VERSION=${{ matrix.ODL_VERSION }}
-            PARENT_IMAGE=${{ matrix.PARENT_IMAGE }}
-            DISTRIBUTION_URL=${{ matrix.DISTRIBUTION_URL }}
+            ODL_VERSION: ${{ matrix.ODL_VERSION }}
+            PARENT_IMAGE: ${{ matrix.PARENT_IMAGE }}
+            DISTRIBUTION_URL: ${{ matrix.DISTRIBUTION_URL }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
