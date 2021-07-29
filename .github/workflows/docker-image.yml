@@ -11,11 +11,36 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        TAG: [ latest ]
-        ODL_VERSION: [ 0.13.3 ]
-        PARENT_IMAGE: [ "openjdk:11-jre-slim-buster" ]
-        DISTRIBUTION_URL: [ "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.13.3/opendaylight-0.13.3.tar.gz" ]
+        include:
+        -
+          TAG: [ latest ]
+          ODL_VERSION: [ 0.13.3 ]
+          PARENT_IMAGE: [ "openjdk:11-jre-slim-buster" ]
+          DISTRIBUTION_URL: [ "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.13.3/opendaylight-0.13.3.tar.gz" ]
+        -
+          TAG: [ 0.13.3 ]
+          ODL_VERSION: [ 0.13.3 ]
+          PARENT_IMAGE: [ "openjdk:11-jre-slim-buster" ]
+          DISTRIBUTION_URL: [ "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.13.3/opendaylight-0.13.3.tar.gz" ]
 
+        -
+          TAG: [ 0.13.2 ]
+          ODL_VERSION: [ 0.13.2 ]
+          PARENT_IMAGE: [ "openjdk:11-jre-slim-buster" ]
+          DISTRIBUTION_URL: [ "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.13.2/opendaylight-0.13.2.tar.gz" ]
+
+        -
+          TAG: [ 0.13.1 ]
+          ODL_VERSION: [ 0.13.1 ]
+          PARENT_IMAGE: [ "openjdk:11-jre-slim-buster" ]
+          DISTRIBUTION_URL: [ "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.13.1/opendaylight-0.13.1.tar.gz" ]
+
+        -
+          TAG: [ 0.13.0 ]
+          ODL_VERSION: [ 0.13.0 ]
+          PARENT_IMAGE: [ "openjdk:11-jre-slim-buster" ]
+          DISTRIBUTION_URL: [ "https://nexus.opendaylight.org/content/repositories/opendaylight.release/org/opendaylight/integration/opendaylight/0.13.0/opendaylight-0.13.0.tar.gz" ]
+  
     steps:
       -
         name: Set up QEMU
