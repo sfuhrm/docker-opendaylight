@@ -3,9 +3,6 @@
 [![Docker Image CI](https://github.com/sfuhrm/docker-opendaylight/actions/workflows/docker-image.yml/badge.svg)](https://github.com/sfuhrm/docker-opendaylight/actions/workflows/docker-image.yml)
 [![](https://img.shields.io/docker/pulls/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
 [![](https://img.shields.io/docker/image-size/stephanfuhrmannionos/opendaylight/latest?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
-[![](https://img.shields.io/microbadger/layers/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
-[![](https://img.shields.io/docker/cloud/automated/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
-[![](https://img.shields.io/docker/cloud/build/stephanfuhrmannionos/opendaylight?style=plastic)](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 OpenDaylight is a SDN controller. It can be used to control and orchestrate a network of switches.
