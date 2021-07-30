@@ -35,7 +35,7 @@ COPY docker-entrypoint.sh /docker-entrypoint.sh
 # wget is used for fetching the tar.gz on build time
 # procps is used by the karaf shell script
 RUN apt-get update && apt-get install -y --no-install-recommends wget procps && \
-  wget -o- $DISTRIBUTION_URL | \
+  wget -O - $DISTRIBUTION_URL | \
   tar -xzf- --strip-components 1 && \
   apt-get remove -y wget && \
   apt-get autoremove -y && \
