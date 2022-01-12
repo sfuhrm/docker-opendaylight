@@ -76,6 +76,11 @@ docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:
 ## Supported tags
 
 - latest
+- 15.1.0
+- 15.0.0
+- 14.3.0
+- 14.2.0
+- 14.1.0
 - 14.0.0
 - 0.13.3
 - 0.13.2
