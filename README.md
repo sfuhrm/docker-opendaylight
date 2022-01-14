@@ -113,7 +113,7 @@ docker run  -e KARAF_USER=michael -e KARAF_PASSWORD=knight -p 6633:6633 -p 8101:
 The sites relevant for this docker image:
 
 - [Github docker-opendaylight](https://github.com/sfuhrm/docker-opendaylight): The Github repository.
-- [The Docker Hub repository with version specific images](https://hub.docker.com/r/sfuhrm/opendaylight)
+- [The Docker Hub repository with version specific images](https://hub.docker.com/r/stephanfuhrmannionos/opendaylight)
 
 More reading can be found here:
 
